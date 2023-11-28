@@ -3,6 +3,7 @@ from flashcard import Flashcard
 from flashcard_deck import FlashcardDeck
 from unittest.mock import patch, mock_open, MagicMock
 import pickle
+import io
 
 class TestFlashcardMethods(unittest.TestCase):
 
