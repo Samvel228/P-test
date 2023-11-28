@@ -1,8 +1,8 @@
-[![CI/CD GitHub Actions](https://github.com/Samvel228/p-test/actions/workflows/test-action.yml/badge.svg)](https://github.com/Samvel228/p-test/actions/workflows/test-action.yml)
-[![Coverage Status](https://coveralls.io/repos/Samvel228/p-test/badge.svg?branch=main)](https://coveralls.io/github/Samvel228/p-test?branch=main)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=Samvel228_p-test&metric=alert_status)](https://sonarcloud.io/dashboard?id=Samvel228_p-test)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Samvel228_p-test&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Samvel228_p-test)
-[![Code smells](https://sonarcloud.io/api/project_badges/measure?project=Samvel228_p-test&metric=code_smells)](https://sonarcloud.io/dashboard?id=Samvel228_p-test)
+[![CI/CD GitHub Actions](https://github.com/Samvel228/P-test/actions/workflows/test-action.yml/badge.svg)](https://github.com/Samvel228/P-test/actions/workflows/test-action.yml)
+[![Coverage Status](https://coveralls.io/repos/Samvel228/P-test/badge.svg?branch=main)](https://coveralls.io/github/Samvel228/P-test?branch=main)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=Samvel228_P-test&metric=alert_status)](https://sonarcloud.io/dashboard?id=Samvel228_P-test)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Samvel228_P-test&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Samvel228_P-test)
+[![Code smells](https://sonarcloud.io/api/project_badges/measure?project=Samvel228_P-test&metric=code_smells)](https://sonarcloud.io/dashboard?id=Samvel228_P-test)
 
 # План тестирования
 
