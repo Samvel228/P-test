@@ -1,6 +1,6 @@
 import unittest
-from ../src/flashcard import Flashcard
-from ../src/flashcard_deck import FlashcardDeck
+from flashcard import Flashcard
+from flashcard_deck import FlashcardDeck
 from unittest.mock import patch, mock_open
 import pickle
 
