@@ -11,7 +11,10 @@ class FlashcardDeck:
     def study_flashcards(self):
             self._shuffle_flashcards()
             for card in self.flashcards:
-                user_answer = input(f"Какое определение у термина'{card.term}'? ")
+                user_answer = input(f"Какое определение у термина'{card.term}'? (Введите * чтобы выйти) ")
+                if user_answer == "*":
+                    print("Выход в главное меню")
+                    break
                 if card.check_similarity(user_answer):
                     print("Правильно")
                 else:

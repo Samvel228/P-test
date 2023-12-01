@@ -51,6 +51,17 @@ class TestFlashcardDecMethods(unittest.TestCase):
                 deck.study_flashcards()
 
         mock_print.assert_called_with("Ошибка! правельное определение: Definition1")
+
+    def test_study_flashcards_exit(self):
+        deck = FlashcardDeck()
+        flashcard1 = Flashcard("Term1", "Definition1")
+        deck.add_flashcard(flashcard1)
+
+        with patch('builtins.input', return_value="*"):
+            with patch('builtins.print') as mock_print:
+                deck.study_flashcards()
+
+        mock_print.assert_called_with("Выход в главное меню")
     
     @patch('builtins.open', new_callable=mock_open)
     @patch('flashcard_deck.pickle.dump')
