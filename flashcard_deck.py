@@ -22,6 +22,7 @@ class FlashcardDeck:
 
     def _shuffle_flashcards(self):
         random.shuffle(self.flashcards)
+        return self.flashcards
 
     def save_flashcard_deck(self, filename):
         with open(filename, 'wb') as file:
