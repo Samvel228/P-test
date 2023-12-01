@@ -113,5 +113,20 @@ class TestFlashcardDecMethods(unittest.TestCase):
 
         mock_print.assert_called_once_with(f"Ошибка: невозможно загрузить данные из 'corrupted_file.pkl'.")
 
+class TestFlashcardIntegration(unittest.TestCase):
+
+    def test_flashcard_deck_interaction(self):
+        deck = FlashcardDeck()
+        flashcard1 = Flashcard("Term1", "Definition1")
+        deck.add_flashcard(flashcard1)
+
+        with patch('builtins.input', return_value="IncorrectAnswer"):
+            with patch('builtins.print') as mock_print:
+                deck.study_flashcards()
+
+        mock_print.assert_called_with("Ошибка! правельное определение: Definition1")
+        self.assertEqual(flashcard1.check_similarity("IncorrectAnswer"), False)
+
+
 if __name__ == '__main__':
     unittest.main()
