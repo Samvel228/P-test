@@ -61,7 +61,7 @@ class TestFlashcardDecMethods(unittest.TestCase):
             with patch('builtins.print') as mock_print:
                 deck.study_flashcards()
 
-        mock_print.assert_called_with("Выход в главное менюds")
+        mock_print.assert_called_with("Выход в главное меню")
     
     @patch('builtins.open', new_callable=mock_open)
     @patch('flashcard_deck.pickle.dump')
