@@ -47,17 +47,17 @@
 
 ### Класс `Flashcard`
 #### Тест Б1.1:  
-Метод: display()  
+
 Входные данные: Создается объект Flashcard с термином "Python" и определением "A high-level programming language."  
 Ожидаемый результат: Метод display возвращает строку "Python: A high-level programming language."
 
 #### Тест Б1.2:  
-Метод: edit_flashcard(new_definition)  
+
 Входные данные: Создается объект Flashcard с термином "Term" и определением "Old definition."  
 Ожидаемый результат: После вызова метода edit_flashcard с новым определением "New definition.", значение definition в объекте изменяется на "New definition."
 
 #### Тест Б1.3:  
-Метод: check_similarity(user_answer, threshold=0.6):  
+
 Входные данные: Создается объект Flashcard с термином "Programming" и определением "Programming is an art of thinking."  
 Ожидаемый результат: Метод check_similarity возвращает True при сравнении с ответом пользователя "Programming is a form of creative thinking."
 

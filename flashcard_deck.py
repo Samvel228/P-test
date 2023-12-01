@@ -9,7 +9,6 @@ class FlashcardDeck:
         self.flashcards.append(flashcard)
 
     def study_flashcards(self):
-            self._shuffle_flashcards()
             for card in self.flashcards:
                 user_answer = input(f"Какое определение у термина'{card.term}'? (Введите * чтобы выйти) ")
                 if user_answer == "*":
@@ -19,10 +18,6 @@ class FlashcardDeck:
                     print("Правильно")
                 else:
                     print(f"Ошибка! правельное определение: {card.definition}")
-
-    def _shuffle_flashcards(self):
-        random.shuffle(self.flashcards)
-        return self.flashcards
 
     def save_flashcard_deck(self, filename):
         with open(filename, 'wb') as file:
